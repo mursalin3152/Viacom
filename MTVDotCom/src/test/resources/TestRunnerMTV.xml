@@ -3,7 +3,7 @@
 
 <suite name="MTV Automation Script " parallel="false">
 
-    <parameter name="os" value="Windows"/>
+    <parameter name="os" value="OS X"/>
     <parameter name="os_version" value="10"/>
     <parameter name="browserName" value="chrome"/>
     <parameter name="browserVersion" value="60.0"/>
