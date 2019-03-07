@@ -21,9 +21,11 @@ public class CommonAPI {
         String getOsNameFromSystem = System.getProperty("os.name");
         System.out.println("Opening the browser : Chrome");
         if(getOsNameFromSystem.contains("Mac")){
-            System.setProperty("webdriver.chrome.driver", "/Users/admin/MTV/Generic/driver/chromedriver");
+            System.setProperty("webdriver.chrome.driver", "//Users/admin/Downloads/MTV/Generic/driver/chromedriver");
+                                 //copy and paste the drivers here for mac
         }else if(getOsNameFromSystem.contains("Windows")){
-            System.setProperty("webdriver.chrome.driver", "/Users/admin/MTV/Generic/driver/chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", "/Users/admin/Downloads/MTV/Generic/driver/chromedriver.exe");
+                                 //copy and paste the drivers here for pc
         }
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(35, TimeUnit.SECONDS); // 20

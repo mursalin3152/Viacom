@@ -25,7 +25,6 @@ public class LaunchPage extends CommonAPI {
     @FindBy(how = How.CSS, using = "#tier_5 .L001_line_list li:nth-child(1) .s_fonts_lineListHeader")
     public static WebElement clipTitle;
     @FindBy(how = How.CSS, using ="#tier_5 .L001_line_list.s_layouts_lineList.s_resets_oldDom_ul li:nth-child(1) h3.s_fonts_lineListHeader")
-    //@FindBy(how = How.XPATH, using = "//h3[contains(text(),'Know Your Co-Host: Rashad Jennings')]")
     public static WebElement latestEpisode;
 
     public String getCurrentPageUrl() {
@@ -52,7 +51,6 @@ public class LaunchPage extends CommonAPI {
     public void selectTvShowNVerify(){
         goToAZ();
         clickOnCatFish();
-        scrollDown();
         String latest = getTitleOfLatesEpizode();
         System.out.println(latest);
 
